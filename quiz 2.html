@@ -1,0 +1,44 @@
+<html>
+<title>puzzlegame</title>
+<head>
+<style type="text/css">
+.sq{
+margin:20px;
+margin-top:500px;
+margin-left:500px;
+font-size:25;
+}
+
+.se{
+font-size:25;
+}
+</style>
+<script language="javascript">
+function check(form)
+{if(form.sot.value=="unesco" )
+{
+alert("iya,benar sekali.The United Nations Educational,Scientific and Cultural Organization(UNESCO)adalah badan khusus dari PBB (UN). Tujuannya adalah untuk memberikan kontribusi bagi perdamaian dan keamanan dengan mempromosikan kerjasama internasional melalui reformasi pendidikan, ilmu pengetahuan, dan budaya dalam rangka meningkatkan rasa hormat universal untuk keadilan, supremasi hukum , dan hak asasi manusia bersama dengan dasar kebebasan menyatakan dalam Piagam PBB ")
+location="quiz 3.html"
+}
+else if(form.sot.value!="unesco" )
+{
+{alert("Salah")
+form.sot.value="";
+
+}
+
+}
+}
+</script>
+</head>
+<body background="bg121.jpg" max-width="100px" min-height="-100px">
+<form>
+<input type="text" name="sot" class="sq" size="25">
+
+<input type="button" name="but" class="se"value="check" size="1"onclick="check(this.form)">
+
+
+</form>
+
+</body>
+</html>
