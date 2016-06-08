@@ -1,0 +1,50 @@
+<html>
+<title>puzzlegame</title>
+<head>
+<style type="text/css">
+.con{
+background-image:url("wella.jpg");
+width:200px;
+height:300px;
+margin:0 auto;
+margin-top:200px;
+}
+.sq{
+margin:20px;
+margin-top:50px;
+margin-left:500px;
+font-size:25;
+}
+.se{
+font-size:25;
+}
+</style>
+<script language="javascript">
+function check(form)
+{if(form.sat.value=="wella" )
+{
+alert("iya,benar sekali.Wella AG adalah besar Jerman perawatan rambut perusahaan yang bermarkas di Jenewa, Swiss . Didirikan pada tahun 1880 olehFranz Ströher , itu mengkhususkan diri dalam Perawatan Rambut , Styling dan pewarna dijual kepada individu serta penata rambutdan dikendalikan oleh Procter & Gamble sejak tahun 2003 sampai dijual ke Coty Inc. bersama dengan P & G merek lain.")
+location="quiz 7-1.html"
+}
+else if(form.sat.value!="wella" )
+{
+{alert("Salah")
+form.sat.value="";
+
+}
+
+}
+}
+</script>
+</head>
+<body background="bg1.jpg" max-width="100px" min-height="-100px">
+<div class="con"></div>
+<form>
+<input type="text" name="sat" class="sq" size="25">
+<input type="button" name="but" class="se"value="check" size="1"onclick="check(this.form)">
+
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<title>puzzlegame</title>
+<head>
+<style type="text/css">
+.con{
+background-image:url("louis vuitton.jpg");
+width:200px;
+height:300px;
+margin:0 auto;
+margin-top:200px;
+}
+.sq{
+margin:20px;
+margin-top:50px;
+margin-left:500px;
+font-size:25;
+}
+.se{
+font-size:25;
+}
+</style>
+<script language="javascript">
+function check(form)
+{if(form.sat.value=="louis vuitton" )
+{
+alert("iya,benar sekali.Louis Vuitton Malletier , sering disebut sebagai Louis Vuitton ( / l U i v w i t ɒ n / loo -ee-vwee- ton ; Perancis:  [LWI vɥitɔ] ), atau disingkat menjadi LV , adalah rumah mode Prancis didirikan pada tahun 1854 oleh Louis Vuitton . Label LV monogram muncul di sebagian besar produknya, mulai dari mewah batang dan barang-barang kulit untuk siap-pakai, sepatu, jam tangan, perhiasan, aksesoris, kacamata dan buku. Louis Vuitton adalah salah satu rumah mode internasional terkemuka di dunia; menjual produknya melalui mandiri butik , departemen sewa di high-end department store , dan melalui e-commerce bagian dari situsnya.")
+location="quiz 4.html"
+}
+else if(form.sat.value!="louis vuitton" )
+{
+{alert("Salah")
+form.sat.value="";
+
+}
+
+}
+}
+</script>
+</head>
+<body background="bg1.jpg" max-width="100px" min-height="-100px">
+<div class="con"></div>
+<form>
+<input type="text" name="sat" class="sq" size="25">
+<input type="button" name="but" class="se"value="check" size="1"onclick="check(this.form)">
+
+
+</form>
+
+</body>
+</html>

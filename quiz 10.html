@@ -1,0 +1,48 @@
+<html>
+<title>puzzlegame</title>
+<head>
+<style type="text/css">
+.con{
+background-image:url("ea sport.jpg");
+width:200px;
+height:300px;
+margin:0 auto;
+margin-top:200px;
+}
+.so{
+margin:20px;
+margin-top:50px;
+margin-left:500px;
+font-size:25;
+}
+.se{
+font-size:25;
+}
+</style>
+<script language="javascript">
+function check(form)
+{if(form.sot.value=="ea sport" )
+{
+alert("iya benar sekali.ea sport merupakah sebah perusahaan multinasional yang bermarkas di burnaby british columbia,kanada.Didirikan pada tahun  1991.Menghasilkan berbagai macam produk game.Perusahaan ini memperkerjakan 8.000 pekerjanya pada tahun 2010.")}
+else if(form.sot.value!="ea sport" )
+{
+{alert("Salah")
+form.sat.value="";
+
+}
+
+}
+}
+</script>
+</head>
+<body background="bg1.jpg" max-width="100px" min-height="-100px">
+<div class="con"></div>
+<form>
+<input type="text" name="sot" class="so" size="25">
+<input type="button" name="but" class="se"value="check" size="1"onclick="check(this.form)">
+
+
+</form>
+
+</body>
+</html>

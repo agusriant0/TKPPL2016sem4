@@ -1,0 +1,49 @@
+<html>
+<title>puzzlegame</title>
+<head>
+<style type="text/css">
+.con{
+background-image:url("tag heuer.jpg");
+width:200px;
+height:300px;
+margin:0 auto;
+margin-top:200px;
+}
+.so{
+margin:20px;
+margin-top:50px;
+margin-left:500px;
+font-size:25;
+}
+.se{
+font-size:25;
+}
+</style>
+<script language="javascript">
+function check(form)
+{if(form.sot.value=="tag heuer" )
+{
+alert("iya,benar sekali.TAG Heuer SA ( English pengucapan: / ˌ t æ ɡ h ɔɪ . Ər / TAG HOY -ər ) adalah Swiss perusahaan manufaktur yang mendesain, memproduksi dan memasarkan jam tangan dan aksesoris mode serta kacamata dan ponsel diproduksi di bawah lisensi oleh lainnya perusahaan dan membawa Tag Heuer nama merek.")
+}
+else if(form.sot.value!="tag heuer" )
+{
+{alert("Salah")
+form.sat.value="";
+
+}
+
+}
+}
+</script>
+</head>
+<body background="bg1.jpg" max-width="100px" min-height="-100px">
+<div class="con"></div>
+<form>
+<input type="text" name="sot" class="so" size="25">
+<input type="button" name="but" class="se"value="check" size="1"onclick="check(this.form)">
+
+
+</form>
+
+</body>
+</html>

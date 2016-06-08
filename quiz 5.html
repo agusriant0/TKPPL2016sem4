@@ -1,0 +1,50 @@
+<html>
+<title>puzzlegame</title>
+<head>
+<style type="text/css">
+.con{
+background-image:url("vodafone.jpg");
+width:200px;
+height:300px;
+margin:0 auto;
+margin-top:200px;
+}
+.sq{
+margin:20px;
+margin-top:50px;
+margin-left:500px;
+font-size:25;
+}
+.se{
+font-size:25;
+}
+</style>
+<script language="javascript">
+function check(form)
+{if(form.sat.value=="vodafone" )
+{
+alert("iya,benar sekali.Vodafone Group plc / v oʊ d ə f oʊ n / adalah British multinasional telekomunikasi perusahaan yang bermarkas di London dan dengan kantor terdaftar di Newbury, Berkshire . [2] Ini adalah telekomunikasi selular terbesar kedua dunia perusahaan diukur oleh pelanggan dan 2013 pendapatan (belakang China Mobile ), dan memiliki 434.000.000 pelanggan pada tanggal 31 Maret 2014")
+location="quiz 6.html"
+}
+else if(form.sat.value!="vodafone" )
+{
+{alert("Salah")
+form.sat.value="";
+
+}
+
+}
+}
+</script>
+</head>
+<body background="bg1.jpg" max-width="100px" min-height="-100px">
+<div class="con"></div>
+<form>
+<input type="text" name="sat" class="sq" size="25">
+<input type="button" name="but" class="se"value="check" size="1"onclick="check(this.form)">
+
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<title>puzzlegame</title>
+<head>
+<style type="text/css">
+.con{
+background-image:url("lotto.jpg");
+width:200px;
+height:300px;
+margin:0 auto;
+margin-top:200px;
+}
+.sq{
+margin:20px;
+margin-top:50px;
+margin-left:500px;
+font-size:25;
+}
+.se{
+font-size:25;
+}
+</style>
+<script language="javascript">
+function check(form)
+{if(form.sat.value=="lotto" )
+{
+alert("iya,benar sekali.Lotto didirikan pada tahun 1973 oleh keluarga Caberlotto (yang adalah pemilik dari tim sepak bola FC Treviso ) di Montebelluna , Pakaian olahraga adalah usaha berikutnya perusahaan. Dalam sepuluh tahun pertama, Lotto berfokus pada pasar Italia. Selama dekade pertama, strategi perusahaan berkonsentrasi pada pembuatan tenis sepatu dan pakaian, dan awal dari nama-nama besar yang disponsori dari sirkuit tenis profesional ( Martina Navratilova , Boris Becker ,Thomas Muster , Andrea GAUDENZI ).")
+location="quiz 5.html"
+}
+else if(form.sat.value!="lotto" )
+{
+{alert("Salah")
+form.sat.value="";
+
+}
+
+}
+}
+</script>
+</head>
+<body background="bg1.jpg" max-width="100px" min-height="-100px">
+<div class="con"></div>
+<form>
+<input type="text" name="sat" class="sq" size="25">
+<input type="button" name="but" class="se"value="check" size="1"onclick="check(this.form)">
+
+
+</form>
+
+</body>
+</html>
